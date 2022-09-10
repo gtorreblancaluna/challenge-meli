@@ -13,7 +13,7 @@ public class TypeVerticalMutantDNA extends TypeMutantDNA{
 	}
 
 	@Override
-	public void checkSecuencieDNA() throws IsMutantException{
+	public void checkSequenceDNA() throws IsMutantException{
 		LOGGER.info(">>>> VERTICAL SEQUENCE <<<<");
 		char[][] dna = UtilMutant.getArrayCharFromDNA(getDnaVO());
 		List<Character> arrayVertical = new ArrayList<>();

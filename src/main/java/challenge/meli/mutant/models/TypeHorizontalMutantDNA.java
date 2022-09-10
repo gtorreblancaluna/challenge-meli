@@ -12,7 +12,7 @@ public class TypeHorizontalMutantDNA extends TypeMutantDNA{
 		super(dnaVO);
 	}
 
-	public void checkSecuencieDNA() throws IsMutantException{
+	public void checkSequenceDNA() throws IsMutantException{
 		LOGGER.info(">>>> HORIZONTAL SEQUENCE <<<<");
 		char[][] dna = UtilMutant.getArrayCharFromDNA(getDnaVO());
 		List<Character> arrayHorizontal = new ArrayList<>();

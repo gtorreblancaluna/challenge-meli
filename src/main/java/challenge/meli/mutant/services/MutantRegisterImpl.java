@@ -32,9 +32,9 @@ public class MutantRegisterImpl implements IMutantRegisterService {
 		TypeMutantDNA diagonalMutant = new TypeDiagonalMutantDNA(dnaVO);
 		
 		try {
-			horizontalMutant.checkSecuencieDNA();
-			verticalMutant.checkSecuencieDNA();
-			diagonalMutant.checkSecuencieDNA();
+			horizontalMutant.checkSequenceDNA();
+			verticalMutant.checkSequenceDNA();
+			diagonalMutant.checkSequenceDNA();
 			iHumanDNAService.save();
 			LOGGER.info("<<<< IS HUMAN >>>>");
 			throw new IsHumanException();

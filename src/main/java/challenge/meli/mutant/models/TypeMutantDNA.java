@@ -17,12 +17,12 @@ public abstract class TypeMutantDNA {
 		setDnaVO(dnaVO);
 	};
 	
-	private final Integer SECUENCIE_IS_GREATER_THAN = 4;
+	private final Integer SEQUENCE_IS_GREATER_THAN = 4;
 	private boolean isMutant;
 	private DnaVO dnaVO;
 	public final Logger LOGGER = LoggerFactory.getLogger(TypeMutantDNA.class);
 	
-	public abstract void checkSecuencieDNA () throws IsMutantException;
+	public abstract void checkSequenceDNA () throws IsMutantException;
 	
 	public void checkIfArrayDNAIsMutant (List<Character> array) throws IsMutantException{
 		if (array.size() >= 4) {
@@ -36,7 +36,7 @@ public abstract class TypeMutantDNA {
 						sequenceArray = new ArrayList<>();
 						sequenceArray.add(array.get(i));
 					}
-					if (sequenceArray.size() >= SECUENCIE_IS_GREATER_THAN) {
+					if (sequenceArray.size() >= SEQUENCE_IS_GREATER_THAN) {
 						LOGGER.info(">>>> IS MUTANT <<<<");
 						sequenceArray.stream().forEach(t->{LOGGER.info(t+" ");});
 						setMutant(true);

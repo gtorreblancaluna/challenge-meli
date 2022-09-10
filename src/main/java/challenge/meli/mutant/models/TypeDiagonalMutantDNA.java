@@ -13,7 +13,7 @@ public class TypeDiagonalMutantDNA extends TypeMutantDNA {
 	}
 	
 	@Override
-	public void checkSecuencieDNA() throws IsMutantException{
+	public void checkSequenceDNA() throws IsMutantException{
 		LOGGER.info(">>>> DIAGONAL SEQUENCE <<<<");
 		List<Character> diagonalArray = new ArrayList<>();
 		char[][] dna = UtilMutant.getArrayCharFromDNA(getDnaVO());
