@@ -39,22 +39,12 @@ Commands in your terminal Linux, MAC our Power Shell for windows
 * mvn spring-boot:run
 
 ## Deploy in Google Cloud App Engine
-##### STEP 1. properties
-
-* [application.properties](src/main/resources/application.properties)
-* uncomment next lines
-```
-spring.datasource.url
-spring.datasource.username
-spring.datasource.password
-```
-
-##### STEP 2. Software requirements
+##### STEP 1. Software requirements
 
 * Install Google Cloud SDK for Java in your local machine
 * Credentials for Google Cloud gtorreblancaluna@gmail.com
 
-##### STEP 3. Deploy app
+##### STEP 2. Deploy app
 go to project path in local directory
 
 * mvn -DskipTests appengine:deploy -Pprod
