@@ -57,4 +57,4 @@ spring.datasource.password
 ##### STEP 3. Deploy app
 go to project path in local directory
 
-* mvn -DskipTests appengine:deploy
+* mvn -DskipTests appengine:deploy -Pprod
